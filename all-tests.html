@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View all diagnostic tests offered by Hindustan Laboratory in Thalarka, Hanumangarh, India, including CBC, Thyroid, Malaria, CRP, Stool pH, Stool Hanging Drop, Urine Sugar and Protein, and more.">
+    <title>All Diagnostic Tests - Hindustan Laboratory</title>
+    <style>
+        /* CSS for Red, Gray, and Black Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #a50000; /* Red */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333; /* Black */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            background-color: #a50000; /* Red */
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background-color: 0.3s;
+            font-size: 0.9em;
+        }
+
+        nav ul li a:hover {
+            background-color: #850000;
+        }
+
+        nav ul li a i {
+            font-size: 16px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .tests {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tests h2 {
+            color: #a50000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .tests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .test-card {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform: 0.3s;
+        }
+
+        .test-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .test-card a {
+            color: #a50000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .test-card a:hover {
+            text-decoration: underline;
+        }
+
+        .test-card p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            color: #a50000;
+            margin-bottom: 15px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            background-color: #a50000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact button:hover {
+            background-color: #850000;
+        }
+
+        .contact-details {
+            line-height: 1.6;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+        }
+
+        .contact-details a {
+            color: #a50000;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            line-height: 1.6;
+        }
+
+        .footer-content p {
+            margin-bottom: 5px;
+        }
+
+        .footer-content a {
+            color: #a50000;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav ul li a {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+
+            nav ul li a i {
+                font-size: 14px;
+            }
+
+            .tests-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Include Font Awesome for navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hindustan Laboratory</h1>
+        <p>Your Trusted Partner in Health Diagnostics</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="all-tests.html"><i class="fas fa-vial"></i> Our Diagnostic Tests</a></li>
+            <li><a href="all-tests.html"><i class="fas fa-list"></i> All Tests</a></li>
+            <li><a href="index.html#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Tests Section -->
+        <section class="tests">
+            <h2>All Diagnostic Tests</h2>
+            <div class="tests-grid">
+                <div class="test-card">
+                    <a href="cbc.html">Complete Blood Count (CBC)</a>
+                    <p>Evaluates overall health by measuring red cells, white cells, and platelets.</p>
+                </div>
+                <div class="test-card">
+                    <a href="wbc.html">White Blood Cell (WBC) Count</a>
+                    <p>Assesses immune system function by counting white blood cells.</p>
+                </div>
+                <div class="test-card">
+                    <a href="plt.html">Platelet (PLT) Count</a>
+                    <p>Measures platelets to evaluate blood clotting ability.</p>
+                </div>
+                <div class="test-card">
+                    <a href="rbc.html">Red Blood Cell (RBC) Count</a>
+                    <p>Counts red blood cells to diagnose anemia or other conditions.</p>
+                </div>
+                <div class="test-card">
+                    <a href="blood-sugar.html">Blood Sugar Test</a>
+                    <p>Monitors glucose levels to diagnose or manage diabetes.</p>
+                </div>
+                <div class="test-card">
+                    <a href="urine.html">Urine Test</a>
+                    <p>Analyzes urine for infections, kidney function, or other disorders.</p>
+                </div>
+                <div class="test-card">
+                    <a href="hemoglobin.html">Hemoglobin Test</a>
+                    <p>Measures hemoglobin levels to assess anemia or oxygen transport.</p>
+                </div>
+                <div class="test-card">
+                    <a href="esr.html">Erythrocyte Sedimentation Rate (ESR)</a>
+                    <p>Detects inflammation in the body.</p>
+                </div>
+                <div class="test-card">
+                    <a href="sgot.html">SGOT (AST)</a>
+                    <p>Evaluates liver and heart function through enzyme levels.</p>
+                </div>
+                <div class="test-card">
+                    <a href="sgpt.html">SGPT (ALT)</a>
+                    <p>Assesses liver health by measuring enzyme levels.</p>
+                </div>
+                <div class="test-card">
+                    <a href="pregnancy-test.html">Pregnancy Test</a>
+                    <p>Detects pregnancy through hCG hormone levels.</p>
+                </div>
+                <div class="test-card">
+                    <a href="typhoid-test.html">Typhoid Test</a>
+                    <p>Diagnoses typhoid fever caused by Salmonella typhi.</p>
+                </div>
+                <div class="test-card">
+                    <a href="thyroid.html">Thyroid Function Test</a>
+                    <p>Measures thyroid hormone levels to assess gland function.</p>
+                </div>
+                <div class="test-card">
+                    <a href="malaria.html">Malaria Test</a>
+                    <p>Detects malaria parasites using microscopy or rapid tests.</p>
+                </div>
+                <div class="test-card">
+                    <a href="crp.html">C-Reactive Protein (CRP) Test</a>
+                    <p>Measures inflammation levels to diagnose infections or chronic diseases.</p>
+                </div>
+                <div class="test-card">
+                    <a href="stool-ph.html">Stool pH Test</a>
+                    <p>Assesses digestive health by measuring stool acidity or alkalinity.</p>
+                </div>
+                <div class="test-card">
+                    <a href="hanging-drop.html">Stool Hanging Drop Test</a>
+                    <p>Detects motile bacteria like Vibrio cholerae in stool for infection diagnosis.</p>
+                </div>
+                <div class="test-card">
+                    <a href="urine-sugar-protein.html">Urine Sugar and Protein Test</a>
+                    <p>Measures glucose and protein in urine to assess diabetes and kidney health.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="https://formspree.io/f/xeoabpqn" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p><strong>Phone</strong>: <a href="tel:+917733003846">+91-77330-03846</a></p>
+                <p><strong>Email</strong>: <a href="mailto:hindustanlabtlk@gmail.com">hindustanlabtlk@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Hindustan Laboratory. All Rights Reserved.</p>
+            <p>App developed by: <a href="https://ajexweb.github.io/Ajex-Web/" target="_blank">Ajay Saini</a></p>
+            <p>Company name: <a href="https://ajexweb.github.io/Ajex-Web/" target="_blank">Ajex Web Developer</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission Feedback -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            setTimeout(() => {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hindustan Laboratory in Thalarka, Hanumangarh, India, offers accurate and reliable diagnostic services. Explore our tests and contact us today.">
+    <title>Hindustan Laboratory</title>
+    <style>
+        /* CSS for Red, Gray, and Black Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #a50000; /* Red */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333; /* Black */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Reduced gap for tighter spacing */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            background-color: #a50000; /* Red */
+            color: white;
+            padding: 8px 16px; /* Reduced padding for compactness */
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 6px; /* Reduced gap between icon and text */
+            transition: background-color: 0.3s;
+            font-size: 0.9em; /* Slightly smaller font size */
+        }
+
+        nav ul li a:hover {
+            background-color: #850000;
+        }
+
+        nav ul li a i {
+            font-size: 16px; /* Slightly smaller icon size */
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Optional CTA Button in Hero Section */
+        .hero .cta-button {
+            margin-top: 20px;
+        }
+
+        .hero .cta-button a {
+            background-color: #a50000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background-color: 0.3s;
+        }
+
+        .hero .cta-button a:hover {
+            background-color: #850000;
+        }
+
+        .about, .rating, .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2, .rating h2, .contact h2 {
+            color: #a50000;
+            margin-bottom: 15px;
+        }
+
+        /* New Diagnostic Tests Button Section */
+        .diagnostic-tests {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .diagnostic-tests .test-button a {
+            background-color: #a50000;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background-color: 0.3s;
+            font-size: 1.1em;
+        }
+
+        .diagnostic-tests .test-button a:hover {
+            background-color: #850000;
+        }
+
+        /* Rating Section */
+        .rating {
+            text-align: center;
+        }
+
+        .rating .average {
+            font-size: 1.5em;
+            color: #ffd700; /* Gold for stars */
+            margin-bottom: 20px;
+        }
+
+        .rating .average i {
+            margin: 0 2px;
+        }
+
+        .rating .average span {
+            color: #333;
+            font-size: 1.2em;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .rating .review {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .rating .review p {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .rating .review .stars {
+            color: #ffd700;
+            font-size: 1em;
+        }
+
+        .rating .review .stars i {
+            margin: 0 2px;
+        }
+
+        .rating .review .name {
+            font-weight: bold;
+            color: #a50000;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            background-color: #a50000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact button:hover {
+            background-color: #850000;
+        }
+
+        .contact-details {
+            line-height: 1.6;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+        }
+
+        .contact-details a {
+            color: #a50000;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            line-height: 1.6;
+        }
+
+        .footer-content p {
+            margin-bottom: 5px;
+        }
+
+        .footer-content a {
+            color: #a50000;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: row; /* Keep horizontal layout */
+                flex-wrap: wrap; /* Allow wrapping if needed */
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav ul li a {
+                padding: 6px 12px; /* Further reduced padding */
+                font-size: 0.8em;
+            }
+
+            nav ul li a i {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 30px;
+            }
+
+            .diagnostic-tests .test-button a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .rating .average {
+                font-size: 1.2em;
+            }
+
+            .rating .average span {
+                font-size: 1em;
+            }
+
+            .rating .review {
+                padding: 10px;
+            }
+        }
+    </style>
+    <!-- Include Font Awesome for the navigation and rating icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hindustan Laboratory</h1>
+        <p>Your Trusted Partner in Health Diagnostics</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="all-tests.html"><i class="fas fa-vial"></i> Our Diagnostic Tests</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>Welcome to Hindustan Laboratory</h2>
+            <p>Providing accurate and reliable diagnostic services for your health needs.</p>
+            <!-- Optional: Uncomment to add a prominent CTA button in the hero section -->
+            <!--
+            <div class="cta-button">
+                <a href="tests.html"><i class="fas fa-vial"></i> Explore Our Diagnostic Tests</a>
+            </div>
+            -->
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <!-- New Diagnostic Tests Button Section -->
+            <div class="diagnostic-tests">
+                <div class="test-button">
+                    <a href="all-tests.html"><i class="fas fa-vial"></i> Explore Our Diagnostic Tests</a>
+                </div>
+            </div>
+            <h2>About Us</h2>
+            <p>Hindustan Laboratory is a state-of-the-art diagnostic center committed to providing accurate and timely test results. Our team of experienced professionals uses advanced technology to ensure the highest standards of quality and care.</p>
+        </section>
+
+        <!-- Rating Section -->
+        <section class="rating" id="rating">
+            <h2>Customer Reviews</h2>
+            <div class="average" aria-label="Average 4.9 star rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.9/5 (Average Rating)</span>
+            </div>
+            <div class="review">
+                <p>"The staff was professional, and the results were delivered quickly. Highly recommend!"</p>
+                <div class="stars" aria-label="5 star rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="name">Priya Sharma</p>
+            </div>
+            <div class="review">
+                <p>"Accurate tests and great service. The lab is clean and well-equipped."</p>
+                <div class="stars" aria-label="4.5 star rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="name">Vikas Saini</p>
+            </div>
+            <div class="review">
+                <p>"Excellent experience! The team explained everything clearly."</p>
+                <div class="stars" aria-label="5 star rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="name">Harpreet Singh</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="https://formspree.io/f/xeoabpqn" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p><strong>Phone</strong>: <a href="tel:+917733003846">+91-77330-03846</a></p>
+                <p><strong>Email</strong>: <a href="mailto:hindustanlabtlk@gmail.com">hindustanlabtlk@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Hindustan Laboratory. All Rights Reserved.</p>
+            <p>App developed by: <a href="https://ajexweb.github.io/Ajex-Web/" target="_blank">Ajay Saini</a></p>
+            <p>Company name: <a href="https://ajexweb.github.io/Ajex-Web/" target="_blank">Ajex Web Developer</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission Feedback -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            setTimeout(() => {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
